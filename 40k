@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta charset="utf-8"/>
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<h2>Accordion</h2>
+
+<button class="accordion">Atributos</button>
+<div class="panel">
+  <button class="accordion">Força (F)</button>
+  <div class="panel">
+  <p>Strength is a measurement of the sheer physical 
+force a character is capable of exerting upon 
+the environment. It limits the amount of weight 
+a character can lift and affects the amount of 
+damage the character deals in melee combat. 
+To use Heavy weapons, a character must have 
+the minimum Strength rating for the weapon; 
+otherwise, the character suffers a penalty to hit(see combat). </p>
+  </div>
+  <button class="accordion">Habilidade(H)</button>
+  <div class="panel">
+  <p>Agility measures a character's manual dexterity 
+and whole body coordination. It governs the 
+character’s accuracy with ranged weapons, ability 
+to manipulate complex devices, and knack for 
+athletic pursuits. A low Agility suggests a clumsy 
+character, while a heightened Agility refl ects 
+physical grace.</p>
+  </div>
+  <button class="accordion">Resistance (R)</button>
+  <div class="panel">
+  <p>
+Resistance provides a measure of the body's ability 
+to resist injury, toxin, and disease. A character 
+with a lower resistance is prone to illness and 
+may take a much longer time to recover from 
+injuries. Higher resistance character may shrug 
+off an attack or ignore the effects of a toxin.  </p>
+  </div>
+  <button class="accordion">Armor(A)</button>
+  <div class="panel">
+  <p>Armor está relacionado com acapacidade de defletir ataques e reduzir o dano recebido. </p>
+  </div>
+  <button class="accordion">Mind(M)</button>
+  <div class="panel">
+  <p>Mind measures a character's ability to process, 
+retain, access and creatively interpret information. 
+A character with a low Mind may be forgetful, 
+unfocused, or oblivious. A higher Intellect 
+character solves problems more quickly and has 
+a broad range of information readily available.
+<br><br>
+Mind também está relacionado com a afinidade do personagem com poderes psionicos
+</p>
+  </div>
+  <button class="accordion">Charism(C)</button>
+  <div class="panel">
+  <p>Charism determines a character's empathy 
+and social awareness, as well as the ability to 
+manipulate social situations to their benefit. A 
+low Fellowship character is socially awkward 
+and fails to recognise emotional cues. A high 
+Charism character can manipulate others into 
+assisting them, even at significant personal cost.<br><br>
+Carisma tambem esta relacionada a conviccao do personagem, seu carater e sua forca de vontade</p>
+
+</div>
+<button class="accordion">Atributos secundarios(C)</button>
+  <div class="panel">
+  <p>Sao atributos derivados dos atributos principais e outras variaveis destricas:
+<br><br>
+    PV: 5xR<br>
+  Psy: 5xM<br>
+  Defense: 3+H+A<br>
+  Will: R+C<br>
+  Melee Hit: H+S<br>
+  Ranged Hit: H+accuracy(of the weapon)
+  </p>
+
+</div>
+</div>
+
+
+<button class="accordion">Classes</button>
+<div class="panel">
+  <button class="accordion">Crusader</button>
+  <div class="panel">
+  <img src="Crusader.png">
+  <p>Crusader Houses are one of the many suborders 
+within the Ecclesiarchy. These organisations are 
+made up of ascetic warrior-monks, who believe that 
+their ability to engage in combat is a manifestation 
+of their faith in the God-Emperor. Houses vary 
+substantially in size, from minor orders with only 
+a handful of members, to larger communes, which 
+incorporate thousands of crusaders. Each house 
+has its own set of traditions and beliefs, including 
+their distinctive fighting styles. 
+
+<br><br>
+Not all monastics follow the same path to membership 
+in their Crusader House, and each has its own 
+distinctive system of acceptance and initiation for 
+members. Some orders have a suffi cient reputation 
+for attracting pilgrims who travel from distant 
+systems to seek membership. Graduates of local 
+Schola Progenium can constitute nearly the 
+entire membership of others. In some cases, 
+a crusader may choose to join an order as 
+an act of penance for a sin or even with 
+appropriate dispensations for a 
+secular crime.
+
+<br><br>
+Crusaders who leave their 
+monasteries typically do so with 
+a specifi c goal in mind. This can 
+be a general one root out heresy, defeat xenos, 
+demonstrate the God-Emperor's strength or 
+it could be a very specific one eliminate a 
+blasphemous leader, put down a specifi c cult, 
+return a lost relic to its home. After they depart, 
+crusaders often do not return to their home until 
+they feel that they have successfully completed 
+their specifi c quest or accomplished a milestone in 
+the effort to complete a more generalised option.
+Most crusaders have strong traditions of serving 
+as defenders to the Ecclesiarchy. Some orders are 
+founded around serving as bodyguards for specifi c 
+high-ranking offi cials, including cardinals and 
+pontiffs. These orders are devoted both to a posting 
+and to the personage who occupies it. Other 
+orders are more open to assignment regarding 
+the person to whom they swear their allegiance. 
+Such orders may receive thousands of requests 
+each year from distant priests who seek 
+out a bodyguard 
+as capable as a
+crusader. <br><br>In some cases, priests may even draw a 
+band of crusaders from different orders to form 
+a Battle Conclave. Such organisations may be 
+assembled to target a specifi c threat against the 
+Imperial Cult, particularly when agents of the 
+Adepta Sororitas are not immediately available.
+<br><br>
+It is not uncommon for Inquisitors to draw 
+crusaders into their personal retinue, where they 
+have ample opportunity to demonstrate their skills 
+against heretics. Working with an Inquisitor is a 
+treacherous assignment, but crusaders do not refuse 
+opportunities to demonstrate their faith. In fact, 
+some crusaders have earned the title of Inquisitor.
+</p>
+  </div>
+  <button class="accordion">Death Cult Assassin (H3)</button>
+  <div class="panel">
+  <img src="vindicare.jpg">
+  <p><i>That which is unknown and unseen commands the greatest fear</i><br>
+  --Motto of the Colexus temple</p>
+  
+</div>
+<button class="accordion">Space Marines(F2 H2 A2)</button>
+  <div class="panel">
+  <img src="spacemarine.png">
+<p><i>They shall be my finest warriors, these men who give themselves to me. Like clay I shall mould them and in the furnace of war forge them. They will be of iron will and steely muscle. In great armour shall I clad them and with the mightiest guns will they be armed. They will be untouched by plague or disease, no sickness will blight them. They will have tactics, strategies and machines such that no foe can best them in battle. They are my bulwark against the Terror. They are the Defenders of Humanity. They are my Space Marines and they shall know no fear
+</i><br>--The Emperor of Mankind.
+</p>
+</div>
+</div>
+
+<button class="accordion">Powers and Talents</button>
+<div class="panel">
+  <button class="accordion">Signature Powers</button>
+  <div class="panel">
+   <p>Signature Powers são poderes específicos e únicos, definidos pela classe do personagem.
+    Algumas classes podem dar acesso a mais de um Signature Power.<br><br>
+    <h3>Battlemaster</h3>
+    Você é um gênio estratégico. Você consegue enxergar com clareza sobrenatural o desenrolar dos combates mais caóticos. Uma vez por turno, você sacrifica suas ações de movimento e ataque para comandar que um aliado no seu campo de visão ataque determinado alvo ou use uma ação de movimento, o aliado tem que ser capaz de ouvir sua ordem. Caso o aliado ataque e acerte ele adiciona seu valor de Mind(M) ao dano causado. 
+    <br><h3>Carnage</h3>Você ama a carnificina da campo de batalha, a sangue derramado pelos inimigos em nome do Emperor inspira você a continuar lutando. 1 Vez por turno, quando um inimigo é derrotado, você pode optar por usar imediatamente uma move action ou recuperar uma quantidade de PVs = sua Resistência<br>
+    <h3>Dual Wielder</h3>
+    Você é especialista em combate usando 2 armas ao mesmo tempo. Quando realizar uma manobra de ataque multiplo voce nao recebe desvantagem nas jogadas de ataque.
+   <br><br>
+<h3>Duelist</h3>Duelistas conseguem focar em um único alvo e derrotá-lo com extrema precisão. Uma vez por turno, se apenas um inimigo estiver em combate corpo a corpo com o personagem e ele for alvo de um ataque corpo a corpo que erre, o personagem por desferir um contra ataque(melee) no alvo inimigo que o atacou.
+    <h3>Faith</h3>Faith in the God-Emperor can inspire acts of 
+heroic scale. Those inspired by the Imperial 
+Creed have accomplished great feats, their hearts 
+filled with fervour and righteous zeal. They may 
+run faster, strike harder, focus their hand and 
+eye upon a hated foe, or even ignore potentially 
+deadly injuries.<br>
+    
+    <h3>Inspiring Presence</h3>
+    <h3>Marksman</h3>
+    Você é capaz de se concentrar em um tiro preciso e fatal, uma vez por turno, caso o personagem não se mova, ele ganha Vantagem ao realizar um ataque a distancia.
+    <br>
+<h3>Psyker</h3>
+    Of all the strange mutations and affl ictions that 
+can imperil one's body or soul, none are feared or 
+misunderstood more than the gift—or curse—of 
+the psyker. By some strange, poorly understood 
+quirk of genetics, some among humanity can reach 
+out into the realm of Chaos and shape the energies 
+there, using warpcraft and witchery to enact 
+corresponding changes in the material universe. Todo Psyker consegue usar <b>smite</b> como habilidade inicial:<br>
+&nbsp&nbsp&nbsp<b>Smite</b><br>
+&nbsp&nbsp&nbspActivation: Action(Mind X Will)<br>
+&nbsp&nbsp&nbspDuration: Instant<br>
+&nbsp&nbsp&nbspRange: 35 metres<br>
+&nbsp&nbsp&nbsptarget: 1 target within range<br>
+&nbsp&nbsp&nbspcost: 1 Psy/1d6 dmg<br>
+&nbsp&nbsp&nbspEffect: The psyker concentrates destructive power 
+through the lens of their will, summoning 
+lethal bolts of raw psychic energy that blast 
+their enemies into ash. The psyker targets one 
+enemy with a psychic ranged attack. 
+
+    <br>
+
+    
+   </p>
+  </div>
+  <button class="accordion">Aim for the eye(1Pt; Dual Wielder or Marksman)</button>
+  <div class="panel">
+   <p>Você é capaz de uma mira precisa, encontrando as menores brechas na armadura do inimigo. Uma vez por turno, quando estiver a menos de 9m do alvo, você pode realizar um ataque com desvantagem, caso acerte, o dano ignora a armadura do alvo.</p>
+  </div>
+  <button class="accordion">Cadia Stands(1Pt; Battlemaster or Inspiring Presence)</button>
+  <div class="panel">
+   <p>Uma vez por batalha você pode motivar um aliado para que ele lute mesmo após ser incapacitado. No seu turno você usa sua ação para levantar um aliado caído, ele não recupera PVs mas consegue agir mesmo estando com PVs negativos, tal efeito não estabiliza o aliado</p>
+  </div>
+  <button class="accordion">Frenzied (1Pt; Carnage)</button>
+  <div class="panel">
+   <p>Quando você ativa Carnage, além dos efeitos normais você também pode usar um melee attack.</p>
+  </div>
+  <button class="accordion">PV extra(1Pt)</button>
+  <div class="panel">
+   <p>Você é mais resistente que o normal. Cada ponto gasto em PV extra gera +10 no PV max do personagem.</p>
+  </div>
+  <button class="accordion">Signature Powers</button>
+  <div class="panel">
+   <p></p>
+  </div>
+  <button class="accordion">Signature Powers</button>
+  <div class="panel">
+   <p></p>
+  </div>
+  <button class="accordion">Signature Powers</button>
+  <div class="panel">
+   <p></p>
+  </div>
+  <button class="accordion">Signature Powers</button>
+  <div class="panel">
+   <p></p>
+  </div>
+  <button class="accordion">Signature Powers</button>
+  <div class="panel">
+   <p></p>
+  </div>
+  <button class="accordion">Signature Powers</button>
+  <div class="panel">
+   <p></p>
+  </div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button class="accordion">Skills</button>
+<div class="panel">
+  <img src="Crusader.png">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button class="accordion">Regras</button>
+<div class="panel">
+  <img src="Crusader.png">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button class="accordion">Combate</button>
+<div class="panel">
+  <img src="Crusader.png">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button class="accordion">Equipamento</button>
+<div class="panel">
+  <img src="Crusader.png">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
